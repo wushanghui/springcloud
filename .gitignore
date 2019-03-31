@@ -3,6 +3,8 @@
 *.classpath
 *.project
 */target
+target/*
+/*/target/
 .idea
 */.mvn/*
 */mvnw
