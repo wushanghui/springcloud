@@ -10,10 +10,10 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 
-@NoArgsConstructor //无参构造器
+//@NoArgsConstructor //无参构造器
 @AllArgsConstructor //全参构造器
-@Data //getset方法
-@Accessors(chain = true) //链式连接
+//@Data //getset方法
+//@Accessors(chain = true) //链式连接
 public class Dept implements Serializable { // entity --orm--- db_table
     /**
      * 主键
@@ -30,5 +30,30 @@ public class Dept implements Serializable { // entity --orm--- db_table
         this.dname = dname;
     }
 
+    public Dept() {
+    }
 
+    public Long getDeptno() {
+        return deptno;
+    }
+
+    public void setDeptno(Long deptno) {
+        this.deptno = deptno;
+    }
+
+    public String getDname() {
+        return dname;
+    }
+
+    public void setDname(String dname) {
+        this.dname = dname;
+    }
+
+    public String getDb_source() {
+        return db_source;
+    }
+
+    public void setDb_source(String db_source) {
+        this.db_source = db_source;
+    }
 }

@@ -7,15 +7,22 @@
     <groupId>com.wsh.springcloud</groupId>
     <artifactId>spring-cloud-init</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>microservicecloud-api</module>
         <module>microservicecloud-consumer-dept-80</module>
         <module>microservicecloud-eureka-7001</module>
         <module>microservicecloud-eureka-7002</module>
         <module>microservicecloud-eureka-7003</module>
+        <module>microservicecloud-provider-dept-8001</module>
+        <module>microservicecloud-provider-dept-8002</module>
+        <module>microservicecloud-provider-dept-8003</module>
+        <module>microservicecloud-consumer-dept-feign</module>
+        <module>microservicecloud-provider-dept-hystrix-8004</module>
+        <module>microservicecloud-consumer-hystrix-dashboard</module>
+        <module>microservicecloud-zuul-gateway-9527</module>
     </modules>
-    <packaging>pom</packaging>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -96,5 +103,7 @@
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>
