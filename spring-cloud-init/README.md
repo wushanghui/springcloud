@@ -67,9 +67,17 @@ springcloud中国社区：http://springcloud.cn/
 springcloud中文网：https://springcloud.cc/
 
  
+# spring-cloud-init 父工程
+ 
+ 1、新建父工程，切记是Packageing是pom模式
+ 
+ ```xml
+<groupId>com.wsh.springcloud</groupId>
+<artifactId>spring-cloud-init</artifactId>
+<version>1.0-SNAPSHOT</version>
+<packaging>pom</packaging>
+```
  
  
- 
- 
- 
+2、主要是定义POM文件，将后续各个子模块公用的jar包等统一提出来，类似一个抽象父类
 
